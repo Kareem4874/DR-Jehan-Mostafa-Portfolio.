@@ -1,0 +1,31 @@
+# Sitemap
+Sitemap: https://drjehanmostafa.com/sitemap.xml
+
+# Allow all crawlers
+User-agent: *
+Disallow:
+
+# Disallow sensitive paths
+User-agent: *
+Disallow: /api/
+Disallow: /_next/
+Disallow: /private/
+
+# Allow Googlebot to index everything except api
+User-agent: Googlebot
+Disallow: /api/
+Allow: /
+
+# Block bad bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+# Crawl delay for respectful crawling
+User-agent: *
+Crawl-delay: 1
